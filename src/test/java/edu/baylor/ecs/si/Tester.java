@@ -15,7 +15,7 @@ public class Tester {
 	@Test
 	void failOverTest() throws TimerException {
 		Assertions.assertThrows(TimerException.class, () -> {
-			Timer.timeMe(-1);
+			Timer.timeMe(Long.valueOf(-1));
 		});
 	}
 	
